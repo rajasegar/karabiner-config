@@ -1,0 +1,346 @@
+{
+    "description": "F Modifiers for Emacs",
+    "manipulators": [
+        {
+            "from": {
+                "key_code": "f",
+                "modifiers": {
+                    "mandatory": [],
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "set_variable": {
+                        "name": "modifier_f",
+                        "value": 1
+                    }
+                }
+            ],
+            "to_after_key_up": [
+                {
+                    "set_variable": {
+                        "name": "modifier_f",
+                        "value": 0
+                    }
+                }
+            ],
+            "to_if_alone": [
+                {
+                    "key_code": "f"
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "modifier_f",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "b",
+                "modifiers": {
+                    "mandatory": [],
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "x",
+                    "modifiers": "left_control"
+                },
+                {
+                    "key_code": "b"
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "modifier_f",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "o",
+                "modifiers": {
+                    "mandatory": [],
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "x",
+                    "modifiers": "left_control"
+                },
+                {
+                    "key_code": "o"
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "modifier_f",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "u",
+                "modifiers": {
+                    "mandatory": [],
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "x",
+                    "modifiers": "left_control"
+                },
+                {
+                    "key_code": "u"
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "modifier_f",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "comma",
+                "modifiers": {
+                    "mandatory": [],
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "comma",
+                    "modifiers": [
+                        "left_alt",
+                        "left_shift"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "modifier_f",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "period",
+                "modifiers": {
+                    "mandatory": [],
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "period",
+                    "modifiers": [
+                        "left_alt",
+                        "left_shift"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "modifier_f",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "y",
+                "modifiers": {
+                    "mandatory": [],
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "a",
+                    "modifiers": [
+                        "left_control"
+                    ]
+                },
+                {
+                    "key_code": "spacebar",
+                    "modifiers": [
+                        "left_control"
+                    ]
+                },
+                {
+                    "key_code": "e",
+                    "modifiers": [
+                        "left_control"
+                    ]
+                },
+                {
+                    "key_code": "w",
+                    "modifiers": [
+                        "left_alt"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "modifier_f",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "k",
+                "modifiers": {
+                    "mandatory": [],
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "x",
+                    "modifiers": [
+                        "left_control"
+                    ]
+                },
+                {
+                    "key_code": "k"
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "modifier_f",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "semicolon",
+                "modifiers": {
+                    "mandatory": [],
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "x",
+                    "modifiers": [
+                        "left_control"
+                    ]
+                },
+                {
+                    "key_code": "semicolon",
+                    "modifiers": "left_control"
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "modifier_f",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "9",
+                "modifiers": {
+                    "mandatory": [],
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "x",
+                    "modifiers": [
+                        "left_control"
+                    ]
+                },
+                {
+                    "key_code": "9",
+                    "modifiers": "left_shift"
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "modifier_f",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "0",
+                "modifiers": {
+                    "mandatory": [],
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "x",
+                    "modifiers": [
+                        "left_control"
+                    ]
+                },
+                {
+                    "key_code": "0",
+                    "modifiers": "left_shift"
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
